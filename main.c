@@ -14,7 +14,7 @@ int main(void)
 	while (1)
 	{
 		dispose_prompt();
-		carry_command(const char *command);
+		carry_command(command);
 		study_command(command, sizeof(command));
 	}
 	return (0);

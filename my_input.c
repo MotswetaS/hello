@@ -13,4 +13,5 @@ void study_command(char *command, size_t size)
 			my_shell_write("Error whilst reading input.\n");
 			exit(EXIT_FAILURE);
 		}
+	}
 }
