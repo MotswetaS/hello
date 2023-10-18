@@ -1,9 +1,11 @@
 #include "shell.h"
 
-void carry _command(const char *command) {
+void carry _command(const char *command)
+{
 	pid_t child_pid = fork();
 
-	if (child_pid == -1) {
+	if (child_pid == -1)
+	{
 		perror("fork");
 		exit(EXIT_FAILURE);
 
@@ -11,7 +13,8 @@ void carry _command(const char *command) {
 		execlp(command, command. (char *NULL));
 		perror("execlp");
 		exit(EXIT_FAILURE);
-	} else {
+	} else
+	{
 		wait(NULL);
 
 	}
