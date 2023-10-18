@@ -6,6 +6,8 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <errno.h>
 
 void dispose_prompt(void);
 void my_shell_write(const char *my_write);

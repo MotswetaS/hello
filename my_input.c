@@ -2,17 +2,15 @@
 
 void study_command(char *command, size_t size)
 {
-	if (fgets(command, size, stdn) == NULL)
+	if (fgets(command, size, stdin) == NULL)
 	{
 		if (feof(stdin))
 		{
-			my_write("\n");
+			my_shell_write("\n");
 			exit(EXIT_SUCCESS);
 		} else
 		{
-			my_write("Error whilst reading input.\n");
+			my_shell_write("Error whilst reading input.\n");
 			exit(EXIT_FAILURE);
 		}
-	}
-	command[strcspn(command. "\n")] = '\0';
 }
