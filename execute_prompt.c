@@ -1,5 +1,10 @@
 #include "shell.h"
-#include <sys/wait.h>
+
+/*
+ * Function - carry_command
+ * Forks a new proces to execute a command
+ * command - represents the spring to be executed
+ */
 
 void carry_command(const char *command)
 {

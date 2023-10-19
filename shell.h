@@ -8,6 +8,9 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <errno.h>
+#include <sys/wait.h>
+#include <limits.h>
+#include <sys/stat.h>
 
 void dispose_prompt(void);
 void my_shell_write(const char *my_write);

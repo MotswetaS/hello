@@ -1,10 +1,9 @@
 #include "shell.h"
 #include <stdbool.h>
 
-/**
- * Description - this function evokes the prompt
- * Return - 1 is success and 0 is fail
- *
+/* Function: main
+ * main function of the program
+ * its a continuous loop that displays the prompt and executes commands
  */
 
 int main(void)
